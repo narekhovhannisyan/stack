@@ -9,9 +9,6 @@ namespace stack {
       newStack.pop();
       newStack.log();
     }
-    // public struct Node {
-    // int value;
-    // new Node parent { get; set; }
   }
   public class Stack {
     private int[] stack = new int[0];
