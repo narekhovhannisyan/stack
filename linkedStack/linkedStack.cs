@@ -2,19 +2,6 @@
 
 namespace stack_namespace
 {
-  class linkedStack
-  {
-    static void Main(string[] args)
-    {
-      lStack stack = new lStack();
-      stack.push(5);
-      stack.push(6);
-      stack.pop();
-      stack.pop();
-      Console.WriteLine(stack.lastItem());
-      Console.WriteLine(stack.isEmpty());
-    }
-  }
   class lStack
   {
     class Node
@@ -38,12 +25,27 @@ namespace stack_namespace
       else top = null;
     }
 
-    public int? lastItem()
+    public int? peek()
     {
       if (top != null) return top.Value;
       else return null;
     }
 
     public bool isEmpty() => top == null ? true : false;
+  }
+  class linkedStack
+  {
+    static void Main(string[] args)
+    {
+      lStack stack = new lStack();
+      stack.push(5);
+      stack.push(6);
+      Console.WriteLine(stack.peek());
+      Console.WriteLine(stack.isEmpty());
+      stack.pop();
+      stack.pop();
+      Console.WriteLine(stack.peek());
+      Console.WriteLine(stack.isEmpty());
+    }
   }
 }
