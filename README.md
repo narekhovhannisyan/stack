@@ -7,5 +7,9 @@ the set is the one most recently inserted: the stack implements a last-in, first
 or LIFO, policy.
 In this repository you can find two implementation of stack: 
 
-1) Array based stack
-2) Linked Stack 
+### 1) Array based stack
+
+Easy but wrong way to implement stack, because each time number was pushed into stack, it must resize it's array size. 
+### 2) Linked Stack
+
+The right way to implement stack :)
