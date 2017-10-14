@@ -2,17 +2,6 @@
 
 namespace arrayBasedStack
 {
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      Stack newStack = new Stack();
-      newStack.push(5);
-      newStack.log();
-      newStack.pop();
-      newStack.log();
-    }
-  }
   public class Stack
   {
     private int[] stack = new int[0];
@@ -44,6 +33,17 @@ namespace arrayBasedStack
       {
         Console.WriteLine("End of the Stack");
       }
+    }
+  }
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Stack newStack = new Stack();
+      newStack.push(5);
+      newStack.log();
+      newStack.pop();
+      newStack.log();
     }
   }
 }
