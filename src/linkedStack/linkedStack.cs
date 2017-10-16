@@ -28,7 +28,7 @@ namespace stack_namespace
     public int? peek()
     {
       if (top != null) return top.Value;
-      else return null;
+      else throw new Exception("Stack is empty!");
     }
 
     public bool isEmpty() => top == null ? true : false;
